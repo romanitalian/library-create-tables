@@ -18,6 +18,7 @@
 ###Написать SQL который вернет список книг, написанный 3-мя соавторами. Результат: книга - количество соавторов.
 
 
+```sql
 EXPLAIN ANALYSE
 SELECT
 	b.*
@@ -74,3 +75,5 @@ Hash Join  (cost=48.47..53.73 rows=1 width=632) (actual time=0.069..0.070 rows=1
         Buckets: 1024  Batches: 1  Memory Usage: 1kB
         ->  Seq Scan on books b  (cost=0.00..1.01 rows=1 width=632) (actual time=0.017..0.019 rows=3 loops=1)
 Total runtime: 0.170 ms
+
+```
